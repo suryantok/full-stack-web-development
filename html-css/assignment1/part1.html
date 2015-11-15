@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Assignment 1</title>
+</head>
+<body>
+	<h1>Please Enter Your Details For Our Dating Website</h1>
+	<form method="post" action="" id="personal-info" >
+		<fieldset>
+			<legend>Your face</legend>
+			<label for="photo">Your Image</label>
+			<input type="file" id="photo" required>	</input><br>
+			<label for="preview">Image preview</label>
+			<img src="" id="preview"></img>
+		</fieldset>
+		
+		<fieldset>
+			<legend>Your General Details</legend>
+			<div>
+				<label for="name">Name:</label>
+				<input type="text" id="name" placeholder="Your full name" required>	</input>
+			</div>
+			<div>
+				<label >Gender: </label>
+				<label for="male">Male</label>
+				<input id="male" name="Male" type="radio"> 
+				<label for="female">Female</label>
+				<input id="female" name="Female" type="radio"> 
+			</div>
+			<div>
+				<label for="age">Age: </label>
+				<input type="number" id="age"  placeholder="18"  required >	</input>
+			</div>
+			<div>
+				<label for="dob">Date of birth: </label>
+				<input type="date" id="dob"/>
+			</div>
+			<div>
+				<label for="color">Favorite color: </label>
+				<input type="color" placeholder="black"/>
+			</div>
+			<div> 
+				<label>Country: 
+					<select name="countries">
+						<option label="England" value="England"></option> 
+						<option label="Northern Ireland" value="Northern Ireland"></option> 
+						<option label="Ireland" value="Ireland"></option> 
+						<option label="Scotland" value="Scotland"></option> 
+						<option label="Wales" value="Wales"></option> 
+					</select>					
+				</label> 
+			</div> 
+		</fieldset>
+		<fieldset>
+			<legend><h2>Your indicators</h2></legend>
+			<div>
+				<label for="height">Height: </label>
+				<label">Short</label>
+				<input type="range" id="height" min=0 max=100/>	
+				<label">Tall</label>
+			</div>
+			<div>
+				<label for="salary">Salary: </label>
+				<label">Poor</label>
+				<input type="range" id="salary" min=0 max=100/>	
+				<label">Rich</label>
+			</div>
+		</fieldset>
+		
+		<fieldset>
+			<legend>Your Contact Information</legend>
+			<div>
+				<label for="email">Email: </label>
+				<input type="email" id="email" required/>
+			</div>
+			<div>
+				<label for="mobile">Mobile: </label>
+				<input type="tel" id="mobile"/>
+			</div>
+			<div>
+				<label for="mobile">Address: </label>
+				<input type="textarea" id="address"/>
+			</div>
+			<div>
+				<label for="contact">Method to contact </label>
+				 <input type="checkbox" name="contact" value="Email"/>Email
+				 <input type="checkbox" name="contact" value="Whatsapp"/>Whatsapp
+				 <input type="checkbox" name="contact" value="In-app chat"/>In-app Chat
+			</div>
+			
+		</fieldset>
+		
+	</form>
+</body>
+</html>
