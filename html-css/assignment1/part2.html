@@ -2,9 +2,43 @@
 
 <html lang="en">
 <head>
-<meta charset="utf-8"/>
 <title>Assignment 1</title>
+<meta charset="utf-8"/>
 
+	<style>
+	fieldset {
+		background:lightyellow;
+		border:10px solid yellow;
+		margin-bottom: 10px;
+		width: 720px;
+	}
+	label{
+		width: 180px;
+		display:inline-block;
+		text-align:right;
+		vertical-align: top;
+	}
+	.lblAutoWidth{
+		width: auto;
+	}
+	.lblMinRange{
+		text-align: center;
+		background-color: brown;
+		color: white;
+		width: 80px;
+	}
+	.lblMaxRange{
+		text-align: center;
+		background-color: purple;
+		color: white;
+		width: 80px;
+	}
+	textarea{
+		width: 360px;
+		height: 50px;
+	}
+
+	</style>
 </head>
 <body>
 	<h1>Please Enter Your Details For Our Dating Website</h1>
@@ -28,11 +62,11 @@
 				<input type="text" id="name" placeholder="Your full name" required>	</input>
 			</div>
 			<div>
-				<label >Gender: </label>
+				<label>Gender: </label>
 				<input id="male" name="Male" value="Male" required type="radio">
-				<label for="male">Male</label>
+				<label for="male" class="lblAutoWidth">Male</label>
 				<input id="female" name="Female" value="Female" type="radio">
-				<label for="female">Female</label>
+				<label for="female" class="lblAutoWidth">Female</label>
 			</div>
 			<div>
 				<label for="age">Age: </label>
@@ -47,7 +81,7 @@
 				<input type="color" placeholder="black"/>
 			</div>
 			<div>
-				<label for="countries">Which countries:</label>
+					<label for="countries">Which countries:</label>
 					<select name="countries">
 						<option label="England" value="England"></option>
 						<option label="Northern Ireland" value="Northern Ireland"></option>
@@ -55,21 +89,22 @@
 						<option label="Scotland" value="Scotland"></option>
 						<option label="Wales" value="Wales"></option>
 					</select>
+
 			</div>
 		</fieldset>
 		<fieldset>
 			<legend>Your indicators</legend>
 			<div>
 				<label for="height">Height: </label>
-				<label>Short</label>
+				<label class="lblMinRange">Short</label>
 				<input type="range" id="height" min=0 max=100/>
-				<label>Tall</label>
+				<label class="lblMaxRange">Tall</label>
 			</div>
 			<div>
 				<label for="salary">Salary: </label>
-				<label>Poor</label>
+				<label class="lblMinRange">Poor</label>
 				<input type="range" id="salary" min=0 max=100/>
-				<label>Rich</label>
+				<label class="lblMaxRange">Rich</label>
 			</div>
 		</fieldset>
 
@@ -85,10 +120,10 @@
 			</div>
 			<div>
 				<label for="mobile">Address: </label>
-				<textarea rows=2 cols=40 id="address" name="address"></textarea>
+				<textarea id="address" name="address"></textarea>
 			</div>
 			<div>
-				<label for="contact">Method to contact </label>
+				<label for="contact" class="lblAutoWidth">Method to contact </label>
 				 <input type="checkbox" name="contact" value="Email"/>Email
 				 <input type="checkbox" name="contact" value="Whatsapp"/>Whatsapp
 				 <input type="checkbox" name="contact" value="In-app chat"/>In-app Chat
