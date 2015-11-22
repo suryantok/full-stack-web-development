@@ -33,13 +33,18 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">Ristorante Con Fusion</a>
+                <a class="navbar-brand" href="index.html#">Ristorante Con Fusion</a>
             </div>
             <div id="navbar" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li class="active"><a href="#"><span class="glyphicon glyphicon-home"
+                    <li ><a href="index.html#"><span class="glyphicon glyphicon-home"
                          aria-hidden="true"></span> Home</a></li>
-                    <li><a href="#">About</a></li>
+                    <li class="active">
+						<a href="#">
+							<span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>
+							About
+						</a>
+					</li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown"
                          role="button" aria-haspopup="true" aria-expanded="false">
@@ -60,7 +65,7 @@
             </div>
         </div>
     </nav>  
-    <header class="jumbotron">
+    <header class="jumbotron" >
 
         <!-- Main component for a primary marketing message or call to action -->
 
@@ -77,10 +82,13 @@
         </div>
     </header>
 
-    <div>
-        <div>
+    <div class="container">
+        <div class="row row-header">
             <div>
-                Breadcrumbs go here
+               <ol class="breadcrumb">
+				  <li><a href="index.html#">Home</a></li>
+				  <li class="active">About Us</li>				  
+				</ol>
             </div>
             <div>
                <h3>About Us</h3>
@@ -88,7 +96,7 @@
             </div>
         </div>
         
-        <div>
+        <div class="row row-content">
             <div>
                 <h2>Our History</h2>
                 <p>Started in 2010, Ristorante con Fusion quickly established itself as a culinary icon par excellence in Hong Kong. With its unique brand of world fusion cuisine that can be found nowhere else, it enjoys patronage from the A-list clientele in Hong Kong.  Featuring four of the best three-star Michelin chefs in the world, you never know what will arrive on your plate the next time you visit us.</p>
@@ -100,7 +108,7 @@
         </div>
 
 
-        <div>
+        <div class="row row-content">
             <div>
                 <h2>Corporate Leadership</h2>
                 <h3>Peter Pan <small>Chief Epicurious Officer</small></h3>
