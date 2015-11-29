@@ -1,0 +1,1 @@
+1. java script is case sensitive- if we put the wrong onClick -> no event is handled and no compile error. it should be onclick

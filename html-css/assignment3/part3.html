@@ -40,15 +40,14 @@ function generateFaces()
    for(i = 0; i < numberOfFaces; i++ )
    {
    		var newItem = document.createElement("img");
-   		newItem.src="smile.png"		
+   		newItem.src="http://home.cse.ust.hk/~rossiter/mooc/matching_game/smile.png"		
 		newItem.style.top = getRandomArbitrary(0, 400);
 		newItem.style.left = getRandomArbitrary(0, 400);
    		theLeftSide.appendChild(newItem)			
    }
    
    leftSideImages = theLeftSide.cloneNode(true);
-   var lastChild = leftSideImages.childNodes[leftSideImages.childNodes.length-1]; 
-   leftSideImages.removeChild(lastChild)
+   leftSideImages.removeChild(leftSideImages.lastChild)
    theRightSide.appendChild(leftSideImages)
    
    
